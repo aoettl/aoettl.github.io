@@ -194,26 +194,6 @@ h2 {
   max-width: 58ch;
 }
 
-/* in-progress one-liners */
-
-.wip {
-  list-style: none;
-  margin-top: 52px;
-  border-top: 1px solid var(--rule);
-  padding-top: 20px;
-}
-
-.wip li { font-size: 15px; line-height: 1.5; margin-bottom: 14px; }
-.wip li .authors { color: var(--muted); }
-.wip .label {
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 16px;
-}
-
 /* ---- book chapters ---- */
 
 .chapters { list-style: none; }
@@ -342,10 +322,6 @@ footer a:hover { color: var(--accent); }
 /* rail extras for split-site pages */
 
 .rail h1 a { color: inherit; text-decoration: none; }
-.rail .bio { font-size: 14px; line-height: 1.55; margin-bottom: 26px; }
-.more { font-family: var(--mono); font-size: 14px; }
-.more a { color: var(--accent); text-decoration: none; }
-.more a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 /* ---- print ---- */
 
