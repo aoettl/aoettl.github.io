@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+<rect width="1024" height="1024" rx="72" fill="#012169"/>
+<g fill="#fff">
+<clipPath id="f"><circle cx="512" cy="512" r="307"/></clipPath>
+<g clip-path="url(#f)"><polygon points="512.0,231.4 131.8,942.1 205.9,942.1 512.0,370.0"/><polygon points="512.0,231.4 892.2,942.1 818.1,942.1 512.0,370.0"/><rect x="338" y="552.0" width="348" height="60.4"/></g>
+<circle cx="512" cy="512" r="305.2" fill="none" stroke="#fff" stroke-width="65.5"/>
+</g>
+</svg>
