@@ -1,0 +1,51 @@
+# Alexander Oettl
+
+> Goizueta Distinguished Chair in Entrepreneurship. Professor of Organization & Management. Goizueta Business School, Emory University. Research Associate, NBER.
+
+I study the economics of innovation: how ideas are produced, how they spread across people, firms, and regions, and what that means for growth. Much of my current work asks how artificial intelligence is changing science and knowledge work.
+
+Author lists below are complete and in published order; please cite them in full. Abstracts for every paper: https://oettl.org/research.md
+
+## Pages
+
+- [Home](https://oettl.org/): bio and contact
+- [Research](https://oettl.org/research/): working papers, publications, and book chapters, with abstracts ([markdown](https://oettl.org/research.md))
+
+## Working papers
+
+- [AI in Science](https://oettl.org/pdf/ai-in-science.pdf): Ajay Agrawal, John McHale, and Alexander Oettl. NBER Working Paper 34953, March 2026. [NBER](https://www.nber.org/papers/w34953)
+- [Enhancing Worker Productivity Without Automating Tasks: A Different Approach to AI and the Task-Based Model](https://oettl.org/pdf/augmenting-workers.pdf): Ajay Agrawal, John McHale, and Alexander Oettl. NBER Working Paper 34781, January 2026 · Revise & resubmit. [NBER](https://www.nber.org/papers/w34781)
+- [From Model Design to Organizational Design: Complexity Redistribution and Trade-Offs in Generative AI](https://oettl.org/pdf/model-org-design.pdf): Sharique Hasan, Alexander Oettl, and Sampsa Samila. arXiv Working Paper, June 2025. [arXiv](https://arxiv.org/abs/2506.22440)
+
+## Publications
+
+- [Proximate (Co-)Working: Knowledge Spillovers and Social Interactions](https://oettl.org/pdf/proximate-coworking.pdf): Maria Roche, Alexander Oettl, and Christian Catalini. 2024. *Management Science*, 70(12), 8245–8264. [DOI](https://doi.org/10.1287/mnsc.2022.03555) · [NBER](https://www.nber.org/papers/w30120)
+- [Creative Destruction? Impact of E-Commerce on the Retail Sector](https://oettl.org/pdf/ecommerce-retail.pdf): Sudheer Chava, Alexander Oettl, Manpreet Singh, and Linghang Zeng. 2024. *Management Science*, 70(4), 2168–2187. [DOI](https://doi.org/10.1287/mnsc.2023.4795) · [NBER](https://www.nber.org/papers/w30077)
+- [Artificial Intelligence and Scientific Discovery: A Model of Prioritized Search](https://oettl.org/pdf/ai-prioritized-search.pdf): Ajay Agrawal, John McHale, and Alexander Oettl. 2024. *Research Policy*, 53(5), 104989. [DOI](https://doi.org/10.1016/j.respol.2024.104989) · [NBER](https://www.nber.org/papers/w31558)
+- [Does a One-Size-Fits-All Minimum Wage Cause Financial Stress for Small Businesses?](https://oettl.org/pdf/minimum-wage.pdf): Sudheer Chava, Alexander Oettl, and Manpreet Singh. 2023. *Management Science*, 69(11), 7095–7117. [DOI](https://doi.org/10.1287/mnsc.2022.4620) · [NBER](https://www.nber.org/papers/w26523)
+- [Superhuman Science: How Artificial Intelligence May Impact Innovation](https://oettl.org/pdf/superhuman-science.pdf): Ajay Agrawal, John McHale, and Alexander Oettl. 2023. *Journal of Evolutionary Economics*, 33(5), 1473–1517. [DOI](https://doi.org/10.1007/s00191-023-00845-3)
+- [Helpful Behavior and the Durability of Collaborative Ties](https://oettl.org/pdf/helpful-behavior.pdf): Sharique Hasan, Alexander Oettl, and Sampsa Samila. 2022. *Organization Science*, 33(5), 1816–1836. [DOI](https://doi.org/10.1287/orsc.2021.1511)
+- [Does Scientist Immigration Harm US Science? An Examination of the Knowledge Spillover Channel](https://oettl.org/pdf/immigration-spillovers.pdf): Ajay Agrawal, John McHale, and Alexander Oettl. 2019. *Research Policy*, 48(5), 1248–1259. [DOI](https://doi.org/10.1016/j.respol.2019.01.005) · [NBER](https://www.nber.org/papers/w24519)
+- [Roads and Innovation](https://oettl.org/pdf/roads-innovation.pdf): Ajay Agrawal, Alberto Galasso, and Alexander Oettl. 2017. *Review of Economics and Statistics*, 99(3), 417–434. [DOI](https://doi.org/10.1162/REST_a_00619)
+- [How Stars Matter: Recruiting and Peer Effects in Evolutionary Biology](https://oettl.org/pdf/how-stars-matter.pdf): Ajay Agrawal, John McHale, and Alexander Oettl. 2017. *Research Policy*, 46(4), 853–867. [DOI](https://doi.org/10.1016/j.respol.2017.02.007) · [NBER](https://www.nber.org/papers/w20012)
+- [The Incidence and Role of Negative Citations in Science](https://oettl.org/pdf/negative-citations.pdf): Christian Catalini, Nico Lacetera, and Alexander Oettl. 2015. *Proceedings of the National Academy of Sciences*, 112(45), 13823–13826. [DOI](https://doi.org/10.1073/pnas.1502280112)
+- [Why Are Some Regions More Innovative Than Others? The Role of Small Firms in the Presence of Large Labs](https://oettl.org/pdf/small-firms-large-labs.pdf): Ajay Agrawal, Iain Cockburn, Alberto Galasso, and Alexander Oettl. 2014. *Journal of Urban Economics*, 81(1), 149–165. [DOI](https://doi.org/10.1016/j.jue.2014.03.003) · [NBER](https://www.nber.org/papers/w17793)
+- [Banking Deregulation and Innovation](https://oettl.org/pdf/banking-deregulation.pdf): Sudheer Chava, Alexander Oettl, Ajay Subramanian, and Krishnamurthy Subramanian. 2013. *Journal of Financial Economics*, 109(3), 759–774. [DOI](https://doi.org/10.1016/j.jfineco.2013.03.015)
+- [Reconceptualizing Stars: Scientist Helpfulness and Peer Performance](https://oettl.org/pdf/reconceptualizing-stars.pdf): Alexander Oettl. 2012. *Management Science*, 58(6), 1122–1140. [DOI](https://doi.org/10.1287/mnsc.1110.1470)
+- [Honour the Helpful](https://oettl.org/pdf/honour-helpful.pdf): Alexander Oettl. 2012. *Nature*, 489(7417), 496–497. [DOI](https://doi.org/10.1038/489496a)
+- [Brain Drain or Brain Bank? The Impact of Skilled Emigration on Poor-Country Innovation](https://oettl.org/pdf/brain-drain-brain-bank.pdf): Ajay Agrawal, Devesh Kapur, John McHale, and Alexander Oettl. 2011. *Journal of Urban Economics*, 69(1), 43–55. [DOI](https://doi.org/10.1016/j.jue.2010.06.003)
+- [International Labor Mobility and Knowledge Flow Externalities](https://oettl.org/pdf/labor-mobility.pdf): Alexander Oettl and Ajay Agrawal. 2008. *Journal of International Business Studies*, 39(8), 1242–1260 · lead article. [DOI](https://doi.org/10.1057/palgrave.jibs.8400358)
+
+## Book chapters
+
+- [What’s Driving Entrepreneurship and Innovation in the Transport Sector?](https://oettl.org/pdf/transport-entrepreneurship.pdf): Derrick Choe, Alexander Oettl, and Rob Seamans. 2022. In *The Role of Innovation and Entrepreneurship in Economic Growth*, eds. Chatterji, Lerner, Stern & Andrews, University of Chicago Press. [NBER](https://www.nber.org/papers/w27284)
+- [Finding Needles in Haystacks: Artificial Intelligence and Recombinant Growth](https://oettl.org/pdf/finding-needles.pdf): Ajay Agrawal, John McHale, and Alexander Oettl. 2019. In *The Economics of Artificial Intelligence: An Agenda*, eds. Agrawal, Gans & Goldfarb, University of Chicago Press. [NBER](https://www.nber.org/papers/w24541)
+- [Collaboration, Stars, and the Changing Organization of Science: Evidence from Evolutionary Biology](https://oettl.org/pdf/collaboration-stars.pdf): Ajay Agrawal, John McHale, and Alexander Oettl. 2015. In *The Changing Frontier: Rethinking Science and Innovation Policy*, eds. Jaffe & Jones, University of Chicago Press. [NBER](https://www.nber.org/papers/w19653)
+- [Scientist Commercialization and Knowledge Transfer](https://oettl.org/pdf/scientist-commercialization.pdf): David Audretsch, Taylor Aldridge, and Alexander Oettl. 2009. In *Entrepreneurship, Growth and Public Policy*, eds. Acs, Audretsch & Strom, Cambridge University Press. [Cambridge](https://www.cambridge.org/core/books/abs/entrepreneurship-growth-and-public-policy/scientist-commercialization-and-knowledge-transfer/ACD35D1D7B0B0FABB8E421EE19410D3F)
+
+## Contact
+
+- [aoettl@emory.edu](mailto:aoettl@emory.edu)
+- [Curriculum vitae](https://oettl.org/pdf/oettl-cv.pdf)
+- [Google Scholar](https://scholar.google.com/citations?user=zIB44gEAAAAJ)
+- [NBER](https://www.nber.org/people/alexander_oettl)
