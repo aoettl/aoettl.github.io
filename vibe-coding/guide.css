@@ -1,0 +1,340 @@
+/* oettl.org/vibe-coding — additions to /style.css.
+   Same palette: paper, ink, one accent (Emory Blue). */
+
+:root {
+  --wash: #f4f5f8;
+  --hair: rgba(26, 26, 26, 0.16);
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+
+/* ---- lede ---- */
+
+.lede { margin-bottom: 84px; }
+
+.lede h1 {
+  font-size: 44px;
+  line-height: 1.06;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  margin-bottom: 26px;
+  text-wrap: balance;
+}
+
+.lede p {
+  font-size: 17px;
+  line-height: 1.55;
+  max-width: 58ch;
+}
+
+.lede p + p { margin-top: 16px; }
+
+.lede .note { font-size: 15px; }
+
+/* ---- running text ---- */
+
+main section { margin-bottom: 84px; }
+
+main h2 { margin-bottom: 30px; }
+
+main h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.005em;
+  margin: 46px 0 14px;
+}
+
+main h2 + h3 { margin-top: 0; }
+
+main section p,
+main section li {
+  font-size: 16px;
+  line-height: 1.55;
+  max-width: 62ch;
+}
+
+main section p + p { margin-top: 14px; }
+
+main section a { text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }
+
+main section ul { list-style: none; margin: 12px 0 0; }
+
+main section ul > li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 8px;
+}
+
+main section ul > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.78em;
+  width: 10px;
+  border-top: 1px solid var(--ink);
+}
+
+code, kbd {
+  font-family: var(--mono);
+  font-size: 0.88em;
+  background: var(--wash);
+  padding: 1px 5px;
+}
+
+code { white-space: nowrap; }
+.fix code { white-space: normal; overflow-wrap: anywhere; }
+
+.note {
+  font-size: 15px;
+  color: var(--muted);
+  margin-top: 14px;
+}
+
+/* ---- numbered steps ---- */
+
+ol.steps {
+  list-style: none;
+  counter-reset: step;
+  margin-top: 6px;
+}
+
+ol.steps > li {
+  counter-increment: step;
+  position: relative;
+  padding: 14px 0 14px 54px;
+  border-top: 1px solid var(--hair);
+}
+
+ol.steps > li:last-child { border-bottom: 1px solid var(--hair); }
+
+ol.steps > li::before {
+  content: counter(step, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 17px;
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--accent);
+}
+
+/* a column with a gap, so a hidden Mac or Windows line leaves no extra space */
+ol.steps > li { display: flex; flex-direction: column; gap: 8px; }
+
+ol.steps > li > p,
+ol.steps > li > p + p { margin-top: 0; }
+
+ol.steps .prompt { margin: 4px 0 2px; }
+
+main section ol.steps + p { margin-top: 20px; }
+
+/* ---- setup picker ---- */
+
+.pick { font-family: var(--mono); font-size: 13px; }
+
+.pick fieldset { border: 0; min-width: 0; margin-bottom: 18px; }
+
+.pick legend {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 9px;
+  padding: 0;
+}
+
+.pick .opts { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.pick label { position: relative; }
+
+.pick input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+
+.pick span {
+  display: block;
+  padding: 7px 13px;
+  border: 1px solid var(--rule);
+  line-height: 1.2;
+}
+
+.pick input:hover + span { background: var(--wash); }
+
+.pick input:checked + span {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.pick input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.rail .pick { border-top: 1px solid var(--rule); padding-top: 20px; margin-bottom: 4px; }
+
+.rail nav { border-top: 1px solid var(--rule); padding-top: 16px; }
+
+main .pick { margin: 26px 0 4px; }
+
+.no-js .pick { display: none; }
+
+/* ---- tool cards ---- */
+
+.tools { margin-top: 26px; }
+
+.tool {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 0 24px;
+  padding: 18px 0;
+  border-top: 1px solid var(--hair);
+}
+
+.tool:last-child { border-bottom: 1px solid var(--hair); }
+
+.tool h3 { margin: 0; font-size: 17px; }
+
+.tool .maker {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.tool p { font-size: 15px; }
+
+.tool p + p { margin-top: 8px; }
+
+/* ---- variants (computer and tool) ---- */
+
+.tag {
+  display: block;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+html[data-os="mac"] [data-for-os="win"],
+html[data-os="win"] [data-for-os="mac"],
+html[data-tool="antigravity"] [data-for-tool]:not([data-for-tool="antigravity"]),
+html[data-tool="claude"] [data-for-tool]:not([data-for-tool="claude"]),
+html[data-tool="codex"] [data-for-tool]:not([data-for-tool="codex"]) {
+  display: none !important;
+}
+
+/* before a tool is chosen, all three sets of steps show, each under its name */
+html:not([data-tool]) div[data-for-tool] { margin-top: 30px; }
+html:not([data-tool]) .choose + div[data-for-tool] { margin-top: 0; }
+.tag.tl { color: var(--accent); margin-bottom: 8px; }
+
+/* once a tool is chosen, the other two tool cards fade */
+html[data-tool] .tool { opacity: 0.5; transition: opacity 0.15s; }
+html[data-tool="antigravity"] .tool[data-card="antigravity"],
+html[data-tool="claude"] .tool[data-card="claude"],
+html[data-tool="codex"] .tool[data-card="codex"] { opacity: 1; }
+
+/* once a choice is made the labels are redundant */
+html[data-os] [data-for-os] > .tag.os,
+html[data-tool] [data-for-tool] > .tag.tl { display: none; }
+
+.choose {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0 0 14px;
+}
+
+html[data-tool] .choose,
+.no-js .choose { display: none; }
+
+/* ---- prompts ---- */
+
+.prompt {
+  position: relative;
+  background: var(--wash);
+  border-left: 3px solid var(--accent);
+  padding: 18px 20px 16px;
+  margin: 16px 0 18px;
+  max-width: 62ch;
+}
+
+.prompt p { font-size: 15.5px; line-height: 1.55; max-width: none; }
+
+.prompt .slot {
+  background: #fff;
+  border-bottom: 1px solid var(--accent);
+  padding: 0 3px;
+}
+
+.prompt button {
+  display: block;
+  margin-top: 14px;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--accent);
+  background: none;
+  border: 1px solid var(--accent);
+  padding: 5px 11px;
+  cursor: pointer;
+}
+
+.prompt button:hover { background: var(--accent); color: #fff; }
+
+.no-js .prompt button { display: none; }
+
+/* ---- tables ---- */
+
+.fix {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+.fix th {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-align: left;
+  padding: 0 16px 9px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.fix td {
+  vertical-align: top;
+  padding: 13px 16px 13px 0;
+  border-bottom: 1px solid var(--hair);
+  line-height: 1.5;
+}
+
+.fix td:first-child { width: 42%; }
+
+/* ---- small screens ---- */
+
+@media (max-width: 880px) {
+  .lede h1 { font-size: 34px; }
+  .lede { margin-bottom: 60px; }
+  .rail nav { display: none; }
+  .rail { margin-bottom: 48px; }
+  .tool { grid-template-columns: minmax(0, 1fr); gap: 8px 0; }
+  ol.steps > li { padding-left: 40px; }
+  .fix, .fix tbody, .fix tr, .fix td { display: block; width: 100%; }
+  .fix thead { display: none; }
+  .fix td { border-bottom: 0; padding: 0 0 6px; }
+  .fix td:first-child { width: 100%; font-weight: 500; padding-top: 14px; }
+  .fix tr { border-bottom: 1px solid var(--hair); padding-bottom: 8px; }
+}
+
+/* print shows the setup chosen on screen */
+@media print {
+  .pick, .prompt button, .choose { display: none; }
+}

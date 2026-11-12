@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Set up an AI coding agent — Alexander Oettl</title>
+  <meta name="description" content="How to install Antigravity, Claude or Codex on a Mac or a Windows laptop and have an AI coding agent build a first program. Written for students at Emory.">
+  <link rel="canonical" href="https://oettl.org/vibe-coding/">
+  <link rel="icon" href="/favicon.ico?v=2" sizes="32x32">
+  <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="guide.css">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Set up an AI coding agent">
+  <meta property="og:description" content="How to install Antigravity, Claude or Codex on a Mac or a Windows laptop and have an AI coding agent build a first program.">
+  <meta property="og:url" content="https://oettl.org/vibe-coding/">
+  <meta property="og:image" content="https://oettl.org/img/aoettl.jpg">
+  <meta name="twitter:card" content="summary">
+  <script src="guide.js"></script>
+  <script data-goatcounter="https://oettl.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div class="page">
+
+  <header class="rail">
+    <h1><a href="/">Alexander Oettl</a></h1>
+
+    <form class="pick" aria-label="Your setup" autocomplete="off" onsubmit="return false">
+      <fieldset>
+        <legend>Your computer</legend>
+        <div class="opts">
+          <label><input type="radio" name="os-rail" data-pick="os" value="mac"><span>Mac</span></label>
+          <label><input type="radio" name="os-rail" data-pick="os" value="win"><span>Windows</span></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Your tool</legend>
+        <div class="opts">
+          <label><input type="radio" name="tool-rail" data-pick="tool" value="antigravity"><span>Antigravity</span></label>
+          <label><input type="radio" name="tool-rail" data-pick="tool" value="codex"><span>Codex</span></label>
+          <label><input type="radio" name="tool-rail" data-pick="tool" value="claude"><span>Claude</span></label>
+        </div>
+      </fieldset>
+    </form>
+
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#tool">Tools</a></li>
+        <li><a href="#setup">Setup</a></li>
+        <li><a href="#first-build">A first program</a></li>
+        <li><a href="#next">Other projects</a></li>
+        <li><a href="#stuck">Common problems</a></li>
+        <li><a href="#rules">Precautions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <header class="lede">
+      <h1>Set up an AI coding agent</h1>
+      <p>You have probably asked ChatGPT or Claude to make something in a chat window, such
+        as a quiz or a chart. A coding agent differs because it works on your own computer within
+        a folder that you choose. It can read the files in that folder, and it runs the
+        programs it writes and fixes them when they fail. The programs stay in the folder, so
+        you can run one again next month on new data.</p>
+      <p>Building software by describing what you want in plain English is often called vibe
+        coding, and it requires no programming experience. Installing an agent and building a
+        first program takes about 45 minutes. Once you choose your computer and your tool
+        below, the page shows only the steps for that setup.</p>
+      <p class="note">I wrote this page for students in my Emory BBA Strategy course. The steps follow
+        each AI company's own instructions as of November 2026, and because these apps change frequently,
+        some information may be outdated.</p>
+    </header>
+
+    <section id="tool">
+      <h2>Tools</h2>
+      <p>You need only one of the three tools below. If you already pay for ChatGPT, Claude or
+        Gemini, use the tool from your subscription. If you don't currently pay for any, I'd
+        consider signing up for the free <a href="https://gemini.google/students/">Google AI Pro
+        student plan</a>, which includes access to Antigravity. Google requires a credit card when
+        you sign up and charges $19.99 a month after the free year unless you cancel, so set a
+        reminder! The offer ends December 31, 2026.</p>
+
+      <form class="pick" aria-label="Your setup" autocomplete="off" onsubmit="return false">
+        <fieldset>
+          <legend>Your computer</legend>
+          <div class="opts">
+            <label><input type="radio" name="os-main" data-pick="os" value="mac"><span>Mac</span></label>
+            <label><input type="radio" name="os-main" data-pick="os" value="win"><span>Windows</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Your tool</legend>
+          <div class="opts">
+            <label><input type="radio" name="tool-main" data-pick="tool" value="antigravity"><span>Antigravity</span></label>
+            <label><input type="radio" name="tool-main" data-pick="tool" value="codex"><span>Codex</span></label>
+            <label><input type="radio" name="tool-main" data-pick="tool" value="claude"><span>Claude</span></label>
+          </div>
+        </fieldset>
+      </form>
+
+      <div class="tools">
+        <div class="tool" data-card="antigravity">
+          <div>
+            <h3>Antigravity</h3>
+            <p class="maker">Google</p>
+          </div>
+          <div>
+            <p>Antigravity is free with a personal Google account, up to a usage limit that resets
+              every week. A paid Google AI Pro plan ($19.99 a month) raises the limit. The free
+              student plan above also includes Antigravity, though Google's terms say its limits
+              can differ from those of the paid plan.</p>
+            <p>Use a personal Gmail account, because school Google accounts cannot sign in
+              unless the university has turned Antigravity on. You must be 18 or older.</p>
+          </div>
+        </div>
+        <div class="tool" data-card="codex">
+          <div>
+            <h3>Codex</h3>
+            <p class="maker">OpenAI, inside the ChatGPT app</p>
+          </div>
+          <div>
+            <p>Codex is free with a ChatGPT account, up to a usage limit. ChatGPT Go ($8 a month)
+              and Plus ($20 a month) allow more.</p>
+            <p>OpenAI also gives verified university students in the U.S. and Canada
+              <a href="https://chatgpt.com/codex/students">$100 in Codex credits</a>, which you
+              can claim before you start.</p>
+          </div>
+        </div>
+        <div class="tool" data-card="claude">
+          <div>
+            <h3>Claude</h3>
+            <p class="maker">Anthropic</p>
+          </div>
+          <div>
+            <p>Claude requires a paid plan, because free accounts cannot use the Code tab these
+              steps rely on. Claude Pro costs $20 a month, and you can cancel it after the first
+              month.</p>
+            <p>I don't believe Emory's Claude subscription includes the Code tab, so if that is
+              your only Claude account, use Antigravity or Codex.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="setup">
+      <h2>Setup</h2>
+      <p>Setup takes about 20 minutes, and you do it only once.</p>
+
+      <h3>Install Python</h3>
+      <p>The agent writes its programs in Python, a free programming language, and needs
+        Python installed on your computer to run them.</p>
+      <ol class="steps">
+        <li>
+          <p>Go to <a href="https://www.python.org/downloads/">python.org/downloads</a> and
+            click the download button at the top of the page.</p>
+        </li>
+        <li>
+          <p data-for-os="mac"><span class="tag os">Mac</span>Open the downloaded file and
+            click through the installer, keeping the default choices. Then open your
+            Applications folder, open the Python folder in it, and double-click
+            <strong>Install Certificates.command</strong>. This step lets Python download
+            from secure websites such as sec.gov.</p>
+          <p data-for-os="win"><span class="tag os">Windows</span>Run the downloaded file and
+            keep the default choices. If you see a box labeled <strong>Add python.exe to
+            PATH</strong>, check it.</p>
+        </li>
+      </ol>
+
+      <h3>Install the app and sign in</h3>
+      <p class="choose">Choose a tool above to see only its steps.</p>
+
+      <div data-for-tool="antigravity">
+        <span class="tag tl">Antigravity</span>
+        <ol class="steps">
+          <li>
+            <p>Go to <a href="https://antigravity.google/download">antigravity.google/download</a>
+              and find <strong>Antigravity App</strong>. The page also offers a CLI and an IDE,
+              which you do not need.</p>
+          </li>
+          <li>
+            <p data-for-os="mac"><span class="tag os">Mac</span>Click <strong>Download for Apple
+              Silicon</strong>. If your Mac has an Intel processor, click <strong>Download for
+              Intel</strong>. To check, open the Apple menu and choose About This Mac. A line
+              that begins with Chip means Apple Silicon, and one that begins with Processor
+              means Intel.</p>
+            <p data-for-os="win"><span class="tag os">Windows</span>Click <strong>Download for
+              x64</strong>. If your laptop has a Snapdragon processor, click <strong>Download
+              for ARM64</strong>.</p>
+          </li>
+          <li>
+            <p data-for-os="mac"><span class="tag os">Mac</span>Open the downloaded
+              <code>Antigravity.dmg</code> file and drag Antigravity into your Applications
+              folder. Then open it from Applications.</p>
+            <p data-for-os="win"><span class="tag os">Windows</span>Run the downloaded installer
+              and follow the setup wizard. Then open Antigravity from the Start menu.</p>
+          </li>
+          <li>
+            <p>Click <strong>Sign in</strong> and finish in your browser with a personal Google
+              account.</p>
+          </li>
+          <li>
+            <p>When the app asks what best describes your work, choose <strong>Knowledge
+              Work</strong>. This gives you a simpler screen that hides the controls
+              programmers use. Then accept <strong>Terms &amp; Data Use</strong>.</p>
+          </li>
+        </ol>
+      </div>
+
+      <div data-for-tool="codex">
+        <span class="tag tl">Codex</span>
+        <ol class="steps">
+          <li>
+            <p data-for-os="mac"><span class="tag os">Mac</span>Go to
+              <a href="https://chatgpt.com/download">chatgpt.com/download</a> and download
+              ChatGPT for macOS. Open the downloaded file, drag ChatGPT into Applications, and
+              open it.</p>
+            <p data-for-os="win"><span class="tag os">Windows</span>Go to
+              <a href="https://chatgpt.com/download">chatgpt.com/download</a> and choose
+              Windows. The app installs from the Microsoft Store. Open ChatGPT from the Start
+              menu when it finishes.</p>
+            <p>If you already had the ChatGPT app, update it first, because older versions do
+              not include Codex.</p>
+          </li>
+          <li>
+            <p>On the first screen, click <strong>Continue to sign in</strong> and finish in
+              your browser.</p>
+          </li>
+          <li>
+            <p>Open the <strong>ChatGPT</strong> dropdown and select <strong>Codex</strong>.</p>
+          </li>
+        </ol>
+      </div>
+
+      <div data-for-tool="claude">
+        <span class="tag tl">Claude</span>
+        <ol class="steps">
+          <li>
+            <p data-for-os="mac"><span class="tag os">Mac</span>Go to
+              <a href="https://claude.com/download">claude.com/download</a> and download Claude
+              for macOS. Open the downloaded file to install it, then open Claude from
+              Applications.</p>
+            <p data-for-os="win"><span class="tag os">Windows</span>Go to
+              <a href="https://claude.com/download">claude.com/download</a> and download Claude
+              for Windows. Most laptops need the x64 version. Run the installer, then open
+              Claude from the Start menu.</p>
+          </li>
+          <li>
+            <p>Sign in with your Claude account. You need Claude Pro or a higher plan for the
+              steps that follow.</p>
+          </li>
+          <li>
+            <p data-for-os="mac"><span class="tag os">Mac</span>If you already had the app, open
+              the Claude menu and choose <strong>Check for Updates…</strong> so that your
+              screen matches these steps.</p>
+            <p data-for-os="win"><span class="tag os">Windows</span>If you already had the app,
+              open the Help menu and choose <strong>Check for Updates…</strong> so that your
+              screen matches these steps.</p>
+          </li>
+        </ol>
+      </div>
+
+      <h3>Open a folder</h3>
+      <p>The agent works inside a single folder. Make a new, empty folder named
+        <code>first-build</code> on your Desktop and open it in the app.</p>
+
+      <div data-for-tool="antigravity">
+        <span class="tag tl">Antigravity</span>
+        <ol class="steps">
+          <li>
+            <p>Click the <strong>New Project</strong> icon in the left sidebar. It looks like a
+              folder with a plus sign.</p>
+          </li>
+          <li>
+            <p>Click <strong>Add Folder</strong>, choose <code>first-build</code>, then click
+              <strong>Create</strong>.</p>
+          </li>
+          <li>
+            <p>Leave the permission setting on <strong>Default</strong>, which asks you before
+              sensitive commands.</p>
+            <p data-for-os="win"><span class="tag os">Windows</span>On Windows 10, and on
+              Windows 11 older than version 24H2 with the August 2026 update, Antigravity asks
+              before every command instead. It still works, but you will approve more requests.</p>
+          </li>
+        </ol>
+      </div>
+
+      <div data-for-tool="codex">
+        <span class="tag tl">Codex</span>
+        <ol class="steps">
+          <li>
+            <p data-for-os="mac"><span class="tag os">Mac</span>Click <strong>Add new
+              project</strong> next to <strong>Chats</strong>, or press Command-O. Choose
+              <code>first-build</code>.</p>
+            <p data-for-os="win"><span class="tag os">Windows</span>Click <strong>Add new
+              project</strong> next to <strong>Chats</strong>, or press Ctrl+O. Choose
+              <code>first-build</code>.</p>
+          </li>
+          <li>
+            <p>Choose <strong>Local</strong>, so that Codex works in the folder on your
+              computer.</p>
+          </li>
+          <li>
+            <p>Below the message box, set permissions to <strong>Ask for approval</strong>.</p>
+            <p data-for-os="win"><span class="tag os">Windows</span>Do this before you send
+              your first message, because it also switches on the protection that keeps Codex
+              inside your folder.</p>
+          </li>
+        </ol>
+      </div>
+
+      <div data-for-tool="claude">
+        <span class="tag tl">Claude</span>
+        <ol class="steps">
+          <li>
+            <p>Click the <strong>Code</strong> tab at the top of the sidebar. If the tabs show
+              only icons, hover over one to see its name.</p>
+          </li>
+          <li>
+            <p>In the row under the message box, click the first control and choose the top
+              entry under <strong>Local</strong>.</p>
+            <p data-for-os="win"><span class="tag os">Windows</span>The list also offers WSL,
+              which you should not choose.</p>
+          </li>
+          <li>
+            <p>Click the folder control next to it, choose <strong>Open folder…</strong>, and
+              pick <code>first-build</code>.</p>
+          </li>
+          <li>
+            <p>In the same row, set the permission mode to <strong>Manual</strong>. Claude then
+              asks before it changes a file or runs a command.</p>
+          </li>
+        </ol>
+      </div>
+
+      <h3>Test the setup</h3>
+      <p>Type this request and press Enter.</p>
+      <div class="prompt">
+        <p>Write a Python script that prints today's date, then run it.</p>
+        <button type="button">Copy</button>
+      </div>
+      <p>Approve any requests the agent makes. You should see today's date in its reply and a
+        new file in your <code>first-build</code> folder, which is the program it wrote. If the
+        agent says Python is not installed, quit the app, open it again and repeat the
+        request.</p>
+
+      <h3>Permissions</h3>
+      <p data-for-tool="antigravity"><span class="tag tl">Antigravity</span>On the Default
+        setting, Antigravity works inside your folder without asking but asks before it reaches
+        outside it, for example to download from sec.gov or to install a Python package. The
+        Turbo setting skips these requests and should stay off for everything on this page.</p>
+      <p data-for-tool="codex"><span class="tag tl">Codex</span>On Ask for approval, Codex
+        works inside your folder without asking but asks before it reaches outside it, for
+        example to download from sec.gov or to install a Python package. Full access skips
+        these requests and should stay off for everything on this page.</p>
+      <p data-for-tool="claude"><span class="tag tl">Claude</span>In Manual mode, Claude asks
+        before it changes a file or runs a command. Bypass permissions skips these requests and
+        should stay off for everything on this page.</p>
+      <p>Read each request before you approve it.</p>
+    </section>
+
+    <section id="first-build">
+      <h2>A first program</h2>
+      <p>The first program downloads ten years of a company's revenue and net income from the
+        SEC and charts them, which takes about 15 minutes. Larger projects follow the same
+        pattern, with the agent downloading what it needs and leaving a program in your folder
+        that you can run again.</p>
+      <ol class="steps">
+        <li>
+          <p>Pick a company that files with the SEC, such as Delta or Apple. Foreign firms such
+            as Adidas and Samsung do not file there.</p>
+        </li>
+        <li>
+          <p>Paste this request, replacing the two parts in brackets.</p>
+          <div class="prompt">
+            <p>In this folder, write a Python program that downloads
+              <span class="slot">[company]</span>'s annual revenue and net income for the last
+              ten fiscal years, or as many years as the SEC has, from the SEC's free EDGAR API.
+              The SEC asks for a contact email in each request; use
+              <span class="slot">[your email address]</span>. Save the numbers to a CSV file and
+              draw a line chart of both as a PNG file. Then run the program and show me the
+              table.</p>
+            <button type="button">Copy</button>
+          </div>
+        </li>
+        <li>
+          <p>Approve the agent's requests as they come. It will probably hit an error or two,
+            which it reads and fixes on its own.</p>
+        </li>
+        <li>
+          <p>Open the PNG file in your folder and look at the chart yourself. The CSV file
+            opens in Excel.</p>
+        </li>
+        <li>
+          <p>Then ask for a change, such as <em>Add United Airlines to the same chart</em> or
+            <em>Change the program so it asks me which company to look up</em>.</p>
+        </li>
+      </ol>
+
+      <h3>Check the numbers</h3>
+      <p>An agent's numbers can be wrong even when its table looks clean. In two test runs for
+        this page, an agent labeled every Nike year two years late, so its chart showed Nike's
+        revenue at a record high in fiscal 2026, when revenue was about a tenth below its 2024
+        peak (the same agent got Delta right the same morning).</p>
+      <ol class="steps">
+        <li>
+          <p>Go to <a href="https://www.sec.gov/edgar/search/">sec.gov/edgar/search</a>, type
+            the company's name and open its most recent 10-K, which is the annual report.</p>
+        </li>
+        <li>
+          <p>Find the income statement, usually titled Consolidated Statements of Operations or
+            Consolidated Statements of Income, and read total revenue for the latest fiscal
+            year.</p>
+        </li>
+        <li>
+          <p>Compare it with the last row of your CSV file.</p>
+        </li>
+      </ol>
+      <p>If the two differ, tell the agent what the 10-K says and ask it to find the cause and
+        fix the program. The usual cause is that the program attached numbers to the wrong
+        year, because each 10-K also reports the two years before it. A table with fewer than
+        ten years can still be correct; Uber, for example, has filed with the SEC only since its
+        2019 IPO.</p>
+    </section>
+
+    <section id="next">
+      <h2>Other projects</h2>
+      <p>For a project of your own, make a new folder with the files the agent needs, then
+        describe the result you want. Choose something a chat window cannot do, such as working
+        through a whole folder of your files or downloading the data a program needs.</p>
+      <p>Ask the agent for a plan before it writes any code, and check one result by hand when
+        it finishes.</p>
+    </section>
+
+    <section id="stuck">
+      <h2>Common problems</h2>
+      <table class="fix">
+        <thead>
+          <tr><th>Problem</th><th>Fix</th></tr>
+        </thead>
+        <tbody>
+          <tr data-for-os="win">
+            <td>Typing <code>python</code> opens the Microsoft Store</td>
+            <td>Search the Start menu for <q>Manage app execution aliases</q> and turn off the
+              two Python entries.</td>
+          </tr>
+          <tr>
+            <td><q>403 Forbidden</q> from sec.gov</td>
+            <td>The request is missing your email. Tell the agent: <em>The SEC needs a
+              User-Agent header with my email.</em></td>
+          </tr>
+          <tr>
+            <td><q>externally-managed-environment</q> when installing a package</td>
+            <td>Tell the agent: <em>Use a virtual environment in this folder.</em></td>
+          </tr>
+          <tr>
+            <td>The chart has no lines or no labels</td>
+            <td>Tell the agent: <em>Install matplotlib in a virtual environment in this folder
+              and redraw the chart with labeled axes.</em></td>
+          </tr>
+          <tr data-for-tool="antigravity">
+            <td>Antigravity will not sign you in</td>
+            <td>Use a personal Google account in place of a school one. If the screen stays on
+              <q>Signing in…</q>, install the latest version of the app.</td>
+          </tr>
+          <tr data-for-tool="claude">
+            <td>Claude's Code tab asks you to upgrade</td>
+            <td>The free Claude plan does not include it. Subscribe to Pro, or use Antigravity
+              or Codex.</td>
+          </tr>
+          <tr data-for-tool="claude" data-for-os="win">
+            <td>The Claude installer says another installation is in progress</td>
+            <td>Right-click the installer and choose Run as administrator.</td>
+          </tr>
+          <tr data-for-tool="codex">
+            <td>Codex says the folder is read-only</td>
+            <td>Approve its request to save the file. If it does not ask, set permissions to
+              <strong>Ask for approval</strong> and send the request again.</td>
+          </tr>
+          <tr data-for-os="mac">
+            <td>macOS asks whether the app may access your Desktop folder (Codex may also ask
+              about Downloads and Music)</td>
+            <td>Allow Desktop, which holds your folder. You can decline the others.</td>
+          </tr>
+          <tr data-for-os="mac">
+            <td>A window asks to install the command line developer tools</td>
+            <td>Click <strong>Install</strong> and wait for it to finish (it can take ten
+              minutes), then repeat your request. These are Apple's free developer tools, which
+              agents use.</td>
+          </tr>
+          <tr data-for-os="mac">
+            <td><q>CERTIFICATE_VERIFY_FAILED</q> when the program downloads</td>
+            <td>Open Applications, then the Python folder, and double-click <strong>Install
+              Certificates.command</strong>. Then ask the agent to run the program again.</td>
+          </tr>
+          <tr data-for-tool="codex" data-for-os="mac">
+            <td>The ChatGPT app will not install on an Intel Mac</td>
+            <td>OpenAI's instructions name only Apple Silicon. Use Antigravity, which has an
+              Intel version.</td>
+          </tr>
+          <tr data-for-os="win">
+            <td>PowerShell says that running scripts is disabled</td>
+            <td>Open PowerShell from the Start menu, run
+              <code>Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser</code>
+              and answer Y.</td>
+          </tr>
+          <tr>
+            <td>You run out of free use</td>
+            <td>Open the same folder in one of the other tools, where your files still are, and
+              type: <em>Read the files in this folder and finish the task.</em></td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="note">For anything else, copy the full error message into the agent and ask it
+        to explain the error and fix it.</p>
+    </section>
+
+    <section id="rules">
+      <h2>Precautions</h2>
+      <p>Keep each project in its own folder, and open only that folder in the agent. Never
+        paste a password into the agent, and keep files you may not share, such as licensed
+        course cases, out of the folder. If you subscribe to a paid plan only for this, set a
+        reminder to cancel it.</p>
+    </section>
+
+    <footer>
+      <p class="colophon">Updated November 2026</p>
+    </footer>
+
+  </main>
+
+</div>
+</body>
+</html>
