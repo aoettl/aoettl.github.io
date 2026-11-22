@@ -82,7 +82,8 @@
         consider signing up for the free <a href="https://gemini.google/students/">Google AI Pro
         student plan</a>, which includes access to Antigravity. Google requires a credit card when
         you sign up and charges $19.99 a month after the free year unless you cancel, so set a
-        reminder! The offer ends December 31, 2026.</p>
+        reminder! The offer ends December 31, 2026. Antigravity and Codex also work on their
+        free plans, with no credit card.</p>
 
       <form class="pick" aria-label="Your setup" autocomplete="off" onsubmit="return false">
         <fieldset>
@@ -155,8 +156,13 @@
         Python installed on your computer to run them.</p>
       <ol class="steps">
         <li>
-          <p>Go to <a href="https://www.python.org/downloads/">python.org/downloads</a> and
-            click the download button at the top of the page.</p>
+          <p>Go to <a href="https://www.python.org/downloads/">python.org/downloads</a>.</p>
+          <p data-for-os="mac"><span class="tag os">Mac</span>Click the <strong>Download
+            Python</strong> button at the top of the page.</p>
+          <p data-for-os="win"><span class="tag os">Windows</span>The button at the top of
+            the page downloads the Python install manager, which these steps do not use.
+            Under the button is a line that begins <q>Or get the standalone installer</q>.
+            Click the link in that line.</p>
         </li>
         <li>
           <p data-for-os="mac"><span class="tag os">Mac</span>Open the downloaded file and
@@ -164,9 +170,9 @@
             Applications folder, open the Python folder in it, and double-click
             <strong>Install Certificates.command</strong>. This step lets Python download
             from secure websites such as sec.gov.</p>
-          <p data-for-os="win"><span class="tag os">Windows</span>Run the downloaded file and
-            keep the default choices. If you see a box labeled <strong>Add python.exe to
-            PATH</strong>, check it.</p>
+          <p data-for-os="win"><span class="tag os">Windows</span>Run the downloaded file.
+            At the bottom of the first window, check <strong>Add python.exe to PATH</strong>,
+            then click <strong>Install Now</strong>.</p>
         </li>
       </ol>
 
@@ -365,9 +371,9 @@
     <section id="first-build">
       <h2>A first program</h2>
       <p>The first program downloads ten years of a company's revenue and net income from the
-        SEC and charts them, which takes about 15 minutes. Larger projects follow the same
-        pattern, with the agent downloading what it needs and leaving a program in your folder
-        that you can run again.</p>
+        SEC and charts them. Larger projects follow the same pattern, with the agent
+        downloading what it needs and leaving a program in your folder that you can run
+        again.</p>
       <ol class="steps">
         <li>
           <p>Pick a company that files with the SEC, such as Delta or Apple. Foreign firms such
@@ -407,16 +413,21 @@
         peak (the same agent got Delta right the same morning).</p>
       <ol class="steps">
         <li>
-          <p>Go to <a href="https://www.sec.gov/edgar/search/">sec.gov/edgar/search</a>, type
-            the company's name and open its most recent 10-K, which is the annual report.</p>
+          <p>Go to the SEC's
+            <a href="https://www.sec.gov/edgar/searchedgar/companysearch">company search</a>,
+            type the company's name and choose it from the list. On the company's page, look
+            under 10-K (annual reports) and open the most recent 10-K, which is the annual
+            report.</p>
         </li>
         <li>
           <p>Find the income statement, usually titled Consolidated Statements of Operations or
             Consolidated Statements of Income, and read total revenue for the latest fiscal
-            year.</p>
+            year. Apple labels this line Total net sales, and Delta labels it Total operating
+            revenue.</p>
         </li>
         <li>
-          <p>Compare it with the last row of your CSV file.</p>
+          <p>Compare it with the last row of your CSV file. The 10-K reports in millions of
+            dollars, and your CSV file may be in dollars or in billions.</p>
         </li>
       </ol>
       <p>If the two differ, tell the agent what the 10-K says and ask it to find the cause and
@@ -443,9 +454,10 @@
         </thead>
         <tbody>
           <tr data-for-os="win">
-            <td>Typing <code>python</code> opens the Microsoft Store</td>
-            <td>Search the Start menu for <q>Manage app execution aliases</q> and turn off the
-              two Python entries.</td>
+            <td>The agent says Python was not found, or mentions the Microsoft Store</td>
+            <td>Quit the app and open it again, so that it sees the new installation. If the
+              agent still cannot find Python, tell it: <em>Use the py command instead of
+              python.</em></td>
           </tr>
           <tr>
             <td><q>403 Forbidden</q> from sec.gov</td>
@@ -455,6 +467,13 @@
           <tr>
             <td><q>externally-managed-environment</q> when installing a package</td>
             <td>Tell the agent: <em>Use a virtual environment in this folder.</em></td>
+          </tr>
+          <tr data-for-os="win">
+            <td>Installing a package fails with <q>Access is denied</q>, or with a message
+              that a file is in use</td>
+            <td>OneDrive may be syncing your Desktop and locking files while it uploads them.
+              Tell the agent: <em>My Desktop is synced by OneDrive, so keep the virtual
+              environment outside this folder.</em></td>
           </tr>
           <tr>
             <td>The chart has no lines or no labels</td>
@@ -481,9 +500,10 @@
               <strong>Ask for approval</strong> and send the request again.</td>
           </tr>
           <tr data-for-os="mac">
-            <td>macOS asks whether the app may access your Desktop folder (Codex may also ask
-              about Downloads and Music)</td>
-            <td>Allow Desktop, which holds your folder. You can decline the others.</td>
+            <td>macOS asks whether the app may access your Desktop folder<span data-for-tool="codex">
+              (Codex may also ask about Downloads and Music)</span></td>
+            <td>Allow Desktop, which holds your folder.<span data-for-tool="codex"> You can
+              decline the others.</span></td>
           </tr>
           <tr data-for-os="mac">
             <td>A window asks to install the command line developer tools</td>
@@ -497,9 +517,10 @@
               Certificates.command</strong>. Then ask the agent to run the program again.</td>
           </tr>
           <tr data-for-tool="codex" data-for-os="mac">
-            <td>The ChatGPT app will not install on an Intel Mac</td>
-            <td>OpenAI's instructions name only Apple Silicon. Use Antigravity, which has an
-              Intel version.</td>
+            <td>The ChatGPT app will not install or open on your Mac</td>
+            <td>The app needs macOS 14 or later. To see your version, open the Apple menu and
+              choose About This Mac. Update macOS, or use Antigravity, which runs on macOS 13
+              and later.</td>
           </tr>
           <tr data-for-os="win">
             <td>PowerShell says that running scripts is disabled</td>
@@ -508,7 +529,7 @@
               and answer Y.</td>
           </tr>
           <tr>
-            <td>You run out of free use</td>
+            <td>You reach a usage limit</td>
             <td>Open the same folder in one of the other tools, where your files still are, and
               type: <em>Read the files in this folder and finish the task.</em></td>
           </tr>
@@ -520,7 +541,8 @@
 
     <section id="rules">
       <h2>Precautions</h2>
-      <p>Keep each project in its own folder, and open only that folder in the agent. Never
+      <p>Keep each project in its own folder, and open only that folder in the agent. If the
+        agent asks to read your other folders, such as Documents or Downloads, decline. Never
         paste a password into the agent, and keep files you may not share, such as licensed
         course cases, out of the folder. If you subscribe to a paid plan only for this, set a
         reminder to cancel it.</p>
